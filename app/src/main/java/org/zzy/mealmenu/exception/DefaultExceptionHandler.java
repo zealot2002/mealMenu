@@ -3,7 +3,6 @@ package org.zzy.mealmenu.exception;
 import android.content.Context;
 import android.widget.Toast;
 
-import com.lz.appStore.widget.MyToast;
 
 import org.zzy.aframwork.util.MyLog;
 
@@ -73,7 +72,7 @@ public class DefaultExceptionHandler implements Thread.UncaughtExceptionHandler 
 
         MyLog.e(" fatal error! " + exceptionStr.toString());
         //TODO
-        MyToast.getInstance().showToast(exceptionStr.toString(), Toast.LENGTH_LONG);
+        Toast.makeText(act,exceptionStr.toString(), Toast.LENGTH_LONG).show();
         //发送收集到的Crash信息到服务器
 
     }

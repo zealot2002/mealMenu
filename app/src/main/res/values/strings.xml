@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MealMenu</string>
+    <string name="shop_name">嘉禾一品粥（育知东路店）</string>
+    <string name="pls_check_your_network">请检查网络再试</string>
 </resources>
